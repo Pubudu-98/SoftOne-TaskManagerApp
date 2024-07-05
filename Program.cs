@@ -26,7 +26,6 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
-    app.UseCors("CorsPolicy");
 }
 else
 {
@@ -39,6 +38,9 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+// Apply the CORS policy globally
+app.UseCors("CorsPolicy");
+
 app.UseAuthorization();
 
 app.MapRazorPages();
@@ -46,4 +48,5 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapFallbackToFile("index.html");
+
 app.Run();

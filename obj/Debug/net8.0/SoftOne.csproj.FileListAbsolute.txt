@@ -72,3 +72,4 @@ E:\SoftOne\bin\Debug\net8.0\task-manager\package.json
 E:\SoftOne\bin\Debug\net8.0\task-manager\tsconfig.app.json
 E:\SoftOne\bin\Debug\net8.0\task-manager\tsconfig.json
 E:\SoftOne\bin\Debug\net8.0\task-manager\tsconfig.spec.json
+E:\SoftOne\obj\Debug\net8.0\SoftOne.sourcelink.json
